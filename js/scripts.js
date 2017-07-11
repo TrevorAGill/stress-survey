@@ -1,24 +1,47 @@
+var stressSignScore = 0;
+var stressSymptomScore = 0;
+var stressCopingScore = 0;
 var stressScore = 0;
 
 
 $(document).ready(function(){
   $("form#stress-survey").submit(function(event){
     event.preventDefault();
-    $("#stress-signs").show();
+
+
+
+
     $("input:checkbox[name=stress-signs]:checked").each(function(){
-      var stressSignValue = $(this).val();
-      $('#stress-signs').append(stressSignValue + "<br>");
+      stressSignScore = stressSignScore + 1;
+      // var stressSignValue = $(this).val();
+
     });
-    $("#stress-symptoms").show();
+
+
     $("input:checkbox[name=stress-symptoms]:checked").each(function(){
-      var stressSymptomValue = $(this).val();
-      $('#stress-symptoms').append(stressSymptomValue + "<br>");
+      stressSymptomScore = stressSymptomScore + 1;
+      // var stressSymptomValue = $(this).val();
+
     });
-    $("#stress-coping").show();
+
+
     $("input:checkbox[name=stress-coping]:checked").each(function(){
-      var stressCopingValue = $(this).val();
-      $('#stress-coping').append(stressCopingValue + "<br>");
+      stressCopingScore = stressCopingScore - 1;
+      // var stressCopingValue = $(this).val();
+
     });
+
+    stressScore = stressSignScore + stressSymptomScore + stressCopingScore;
+
+    if (stressScore >= 5) {
+      $("#stress-response").show();
+    } else if (stressScore >= 0 && stressScore < 5) {
+      $("#neutral-response").show();
+    } else if (stressScore < 0) {
+      $("#calm-response").show();
+    }
+
     $('#stress-survey').hide();
   });
+
 });

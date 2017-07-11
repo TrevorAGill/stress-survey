@@ -15,33 +15,37 @@
       <form id="stress-survey">
         <div class="form-group">
           <p>Warning signs of stress: (select all that apply)</p>
-          <input type="checkbox" name="stress-signs" value="bike">Nervous eye twitch<br>
-          <input type="checkbox" name="stress-signs" value="car">Insomnia<br>
-          <input type="checkbox" name="stress-signs" value="carpool">Digestion issues<br>
-          <input type="checkbox" name="stress-signs" value="walk">Nervous laughter<br>
+          <input type="checkbox" name="stress-signs" value=1>Nervous eye twitch<br>
+          <input type="checkbox" name="stress-signs" value=1>Insomnia<br>
+          <input type="checkbox" name="stress-signs" value=1>Digestion issues<br>
+          <input type="checkbox" name="stress-signs" value=1>Nervous laughter<br>
         </div>
         <div class="form-group">
           <p>Symptoms of high stress: (select all that apply)</p>
-          <input type="checkbox" name="stress-symptoms" value="bike">High blood pressure<br>
-          <input type="checkbox" name="stress-symptoms" value="car">Loss of hair<br>
-          <input type="checkbox" name="stress-symptoms" value="carpool">Loss of appetite<br>
-          <input type="checkbox" name="stress-symptoms" value="walk">Anxiety<br>
+          <input type="checkbox" name="stress-symptoms" value=1>High blood pressure<br>
+          <input type="checkbox" name="stress-symptoms" value=1>Loss of hair<br>
+          <input type="checkbox" name="stress-symptoms" value=1>Loss of appetite<br>
+          <input type="checkbox" name="stress-symptoms" value=1>Anxiety<br>
         </div>
         <div class="form-group">
           <p>Coping mechanisms to deal with stress: (select all that apply)</p>
-          <input type="checkbox" name="stress-coping" value="bike">Riding a bike<br>
-          <input type="checkbox" name="stress-coping" value="car">Meditate<br>
-          <input type="checkbox" name="stress-coping" value="carpool">Pet a cat<br>
-          <input type="checkbox" name="stress-coping" value="walk">Walking<br>
+          <input type="checkbox" name="stress-coping" value=-1>Riding a bike<br>
+          <input type="checkbox" name="stress-coping" value=-1>Meditate<br>
+          <input type="checkbox" name="stress-coping" value=-1>Pet a cat<br>
+          <input type="checkbox" name="stress-coping" value=-1>Walking<br>
         </div>
        <button type="submit">Submit Survey</button>
       </form>
-      <span id="work-responses">
-        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+      <span id="stress-response">
+        <p><b>You are stressed out!</b></p>
       </span>
       <br>
-      <span id="fun-responses">
-        <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      <span id="neutral-response">
+        <p><b>You are doing ok.</b></p>
+      </span>
+      <br>
+      <span id="calm-response">
+        <p><b>You are super chill!</b></p>
       </span>
     </div>
   </body>

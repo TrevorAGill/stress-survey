@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transportation Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Stress Test</h2>
+      </div>
+      <form id="stress-survey">
+        <div class="form-group">
+          <p>Warning signs of stress: (select all that apply)</p>
+          <input type="checkbox" name="stress-signs" value="bike">Nervous eye twitch<br>
+          <input type="checkbox" name="stress-signs" value="car">Insomnia<br>
+          <input type="checkbox" name="stress-signs" value="carpool">Digestion issues<br>
+          <input type="checkbox" name="stress-signs" value="walk">Nervous laughter<br>
+        </div>
+        <div class="form-group">
+          <p>Symptoms of high stress: (select all that apply)</p>
+          <input type="checkbox" name="stress-symptoms" value="bike">High blood pressure<br>
+          <input type="checkbox" name="stress-symptoms" value="car">Loss of hair<br>
+          <input type="checkbox" name="stress-symptoms" value="carpool">Loss of appetite<br>
+          <input type="checkbox" name="stress-symptoms" value="walk">Anxiety<br>
+        </div>
+        <div class="form-group">
+          <p>Coping mechanisms to deal with stress: (select all that apply)</p>
+          <input type="checkbox" name="stress-coping" value="bike">Riding a bike<br>
+          <input type="checkbox" name="stress-coping" value="car">Meditate<br>
+          <input type="checkbox" name="stress-coping" value="carpool">Pet a cat<br>
+          <input type="checkbox" name="stress-coping" value="walk">Walking<br>
+        </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+      <span id="work-responses">
+        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+      </span>
+      <br>
+      <span id="fun-responses">
+        <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      </span>
+    </div>
+  </body>
+</html>
